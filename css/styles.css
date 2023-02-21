@@ -142,7 +142,7 @@ color: var(--third-color);
 }
 
 .hero-section {
-    background-color: var(--main-title-color);
+background-color: var(--main-title-color);
 }
 
 .hero-title {
