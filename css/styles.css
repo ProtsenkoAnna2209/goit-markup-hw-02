@@ -2,8 +2,11 @@
 --main-title-color: #2E2F42;
 --secondary-title-color: #FFFFFF;
 --accent-color: #4D5AE5;
+--secondary-accent-color: #404BBF;
 --secondary-font: "Ralawey", sans-serif;
 --third-color: #434455;
+--first-background-color: #E7E9FC;
+--secondary-background-color: #F4F4FD;
 }
 
 body {
@@ -88,6 +91,11 @@ list-style: none;
 }
 
 .header-mail:hover, 
+.header-mail:focus {
+color:var(--accent-color);
+}
+
+.header-tel:hover, 
 .header-tel:focus {
 color:var(--accent-color);
 }
@@ -102,7 +110,11 @@ color: var(--main-title-color);
 
 .header-link:hover,
 .header-link:focus {
- color: #404BBF; 
+ color: var(--secondary-accent-color); 
+}
+
+.cotacts {
+
 }
 
 .header-contacts {
@@ -112,7 +124,6 @@ color: var(--main-title-color);
 }
 
 .header-mail {
-font-weight: 400;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
@@ -131,9 +142,11 @@ color: var(--third-color);
 }
 
 .hero-section {
+    background-color: var(--main-title-color);
 }
 
 .hero-title {
+font-weight: 700;    
 font-size: 56px;
 line-height: 1.07;
 letter-spacing: 0.02em;
@@ -142,11 +155,17 @@ color: var(--secondary-title-color);
 }
 
 .hero-btn {
-color: #FFFFFF;
+color: var(--secondary-title-color);
 cursor: pointer;
 background-color: var(--accent-color);
 }
 
+.hero-btn:hover,
+.hero-btn:focus {
+ color: var(--secondary-title-color); 
+ background-color: var(--secondary-accent-color);  
+}
+ 
 /*------strategy----*/
 
 .strategy {
@@ -189,6 +208,7 @@ list-style: none;
 
 /*-----team-------*/
 .team {
+    background-color: var(--secondary-background-color);
 }
 
 .team-title {
@@ -247,14 +267,20 @@ list-style: none;
 }
 
 .main-btn {
-color: #FFFFFF;
+color: var(--accent-color);
+background-color: var(--first-background-color);
 cursor: pointer;
 }
 
+.main-btn:hover,
+.main-btn:focus {
+color: var(--secondary-title-color);
+background-color: var(--secondary-accent-color);
+}
 /*-----footer-------*/
 
 .footer {
-    
+ background-color:var(--main-title-color);   
 }
 
 .footer-link {
@@ -265,7 +291,7 @@ cursor: pointer;
     line-height: 1.7px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #F4F4FD;
+    color: var(--secondary-background-color);
     }
     
     .footer-link span {
@@ -273,7 +299,7 @@ cursor: pointer;
     }
     
     .footer-text {
-    color: #E7E9FC;
+    color: var(--first-background-color);
     }
 
 
